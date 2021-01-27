@@ -1,9 +1,8 @@
 import React from "react";
 import "./VideoBanner.scss";
 
-const videoUrl = "https://legacyridge.ca/wp-content/uploads/Legacy-ridge.mp4";
-
 const VideoBanner = (props) => {
+  const videoUrl = "https://legacyridge.ca/wp-content/uploads/Legacy-ridge.mp4";
   return (
     <div className="videoBanner">
       <video autoPlay muted loop>

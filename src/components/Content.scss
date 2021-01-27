@@ -1,0 +1,18 @@
+.content {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  .welcome {
+    width: 80%;
+    margin: auto;
+    h1 {
+      color: #606060;
+    }
+    p {
+      color: #666666;
+    }
+  }
+}
