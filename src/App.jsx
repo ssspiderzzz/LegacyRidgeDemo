@@ -1,30 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import "./App.scss";
-import Header from "./components/Header";
-import { useWindowSize, useMousePosition } from "./utils/hooks";
+import Home from "./pages/Home";
 
-export default function App() {
-  const aboutMe = useRef(null);
-  const projects = useRef(null);
-  const contact = useRef(null);
-
-  const [userOffset, setUserOffset] = useState(0);
-  const { windowWidth, windowHeight } = useWindowSize();
-  const { mouseX, mouseY } = useMousePosition();
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setUserOffset(window.pageYOffset);
-    };
-  }, []);
-
+const App = () => {
   return (
     <div className="App">
-      <Header
-        refs={{ aboutMe, projects, contact }}
-        userOffset={userOffset}
-        windowHeight={windowHeight}
-      />
+      <Home />
     </div>
   );
-}
+};
+
+export default App;
