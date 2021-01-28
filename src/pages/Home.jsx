@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Header userOffset={userOffset} windowHeight={windowHeight} />
+      <Header userOffset={userOffset} windowHeight={windowHeight} windowWidth={windowWidth} />
       <VideoBanner />
       <Content />
     </div>

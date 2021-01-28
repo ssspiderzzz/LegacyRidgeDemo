@@ -4,9 +4,9 @@ import "./Header.scss";
 
 const Header = (props) => {
   const headerMenuStyle =
-    props.userOffset > props.windowHeight - 150
+    props.userOffset === 0
       ? {
-          header: { opacity: 0.5 },
+          header: { backgroundColor: "transparent" },
         }
       : {};
 
