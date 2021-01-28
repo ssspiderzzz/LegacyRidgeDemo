@@ -3,7 +3,6 @@ import "./Content.scss";
 import ReactPlayer from "react-player";
 
 const Content = (props) => {
-  console.log("inside content");
   return (
     <div className="content">
       <div className="welcome">
@@ -17,11 +16,14 @@ const Content = (props) => {
         </p>
       </div>
       <div className="youtubeVideoWrapper">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=tHld5Mdgm90&feature=emb_logo"
-          width="100%"
-          height="360px"
-        />
+        <div className="playerWrapper">
+          <ReactPlayer
+            className="reactPlayer"
+            url="https://www.youtube.com/watch?v=tHld5Mdgm90&feature=emb_logo"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
     </div>
   );

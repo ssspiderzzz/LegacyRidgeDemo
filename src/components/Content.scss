@@ -1,5 +1,4 @@
 .content {
-  top: 100vh;
   text-align: center;
   padding: 50px 0;
   position: relative;
@@ -22,7 +21,16 @@
   }
   .youtubeVideoWrapper {
     padding: 50px 0;
-    width: 80%;
-    margin: auto;
+    width: auto;
+    height: auto;
+    .playerWrapper {
+      position: relative;
+      padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+      .reactPlayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
   }
 }

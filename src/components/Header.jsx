@@ -7,6 +7,7 @@ const Header = (props) => {
     props.userOffset === 0
       ? {
           header: { backgroundColor: "transparent" },
+          logo: { opacity: 0 },
         }
       : {};
 
@@ -14,7 +15,7 @@ const Header = (props) => {
     <header className="header" style={headerMenuStyle.header}>
       <div className="logoContainer">
         <a href="#Home">
-          <img src={Logo} alt="logo1" />
+          <img src={Logo} alt="logo1" style={headerMenuStyle.logo} />
         </a>
       </div>
       <div className="navContainer">
