@@ -3,7 +3,7 @@ import { useWindowSize } from "../utils/hooks";
 import Header from "../components/Header";
 import VideoBanner from "../components/VideoBanner";
 import Content from "../components/Content";
-import PriceList from "../components/PriceList";
+import Info from "../components/Info";
 
 const Home = () => {
   const [userOffset, setUserOffset] = useState(0);
@@ -20,7 +20,7 @@ const Home = () => {
       <Header userOffset={userOffset} />
       <VideoBanner windowHeight={windowHeight} windowWidth={windowWidth} />
       <Content />
-      <PriceList />
+      <Info />
     </div>
   );
 };
