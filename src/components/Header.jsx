@@ -11,8 +11,13 @@ const Header = (props) => {
         }
       : {};
 
+  const navItems = ["Home", "Welcome", "Lifestyle", "Gallary", "Register"];
+
   return (
-    <header className="header" style={headerMenuStyle.header}>
+    <header
+      className="header fixed w-full flex flex-wrap items-center justify-between navbar-expand-lg bg-navbar"
+      style={headerMenuStyle.header}
+    >
       <div className="logoContainer">
         <a href="#Home">
           <img src={Logo} alt="logo1" style={headerMenuStyle.logo} />
@@ -20,21 +25,13 @@ const Header = (props) => {
       </div>
       <div className="navContainer">
         <ul className="nav">
-          <li key="HOM">
-            <span href="#Home">HOME</span>
-          </li>
-          <li key="WEL">
-            <span href="#Welcome">WELCOME</span>
-          </li>
-          <li key="LIF">
-            <span href="#Lifestyle">LIFESTYLE</span>
-          </li>
-          <li key="GAL">
-            <span href="#Gallary">GALLARY</span>
-          </li>
-          <li key="REG">
-            <span href="#Register">REGISTER</span>
-          </li>
+          {navItems.map((navItem) => {
+            return (
+              <li key={`#${navItem}`}>
+                <span href={`#${navItem}`}>{navItem}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </header>

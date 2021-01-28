@@ -1,0 +1,138 @@
+@tailwind base;
+
+h1 {
+  @apply text-4xl font-bold mt-6 mb-6;
+}
+
+h2 {
+  @apply text-3xl font-bold mt-6 mb-6;
+}
+
+h3 {
+  @apply text-2xl font-bold mt-6 mb-6;
+}
+
+h4 {
+  @apply text-xl font-bold mt-6 mb-6;
+}
+
+h5 {
+  @apply text-lg font-bold mt-6 mb-6;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* slightly transparent fallback */
+.backdrop-blur {
+  background-color: rgba(44, 43, 43, 0.5);
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+  .backdrop-blur {
+    background-color: rgba(44, 43, 43, 0.5);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+}
+
+.verline {
+  margin: 0 12px;
+  height: 1px;
+  vertical-align: middle;
+  width: 80px;
+  background-color: #000;
+  display: inline-block;
+}
+
+/*--- normal-underline / custom-underline ---*/
+.normal-underline,
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.normal-underline,
+.normal-underline:hover,
+.normal-underline:focus,
+.normal-underline:active,
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  text-decoration: none;
+}
+
+.normal-underline::after,
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+button.normal-underline::after,
+button.custom-underline::after {
+  top: 85%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  transition: 0.5s ease all 0.3s;
+}
+
+.text-black .normal-underline::after,
+.text-black .custom-underline::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-white .normal-underline::after,
+.text-white .custom-underline::after {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+button.normal-underline::after {
+  width: 90%;
+}
+
+button:hover.custom-underline::after {
+  width: 90%;
+  transition: 0.3s ease all;
+}
+
+/* remove browser button focus style */
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+/* gradient */
+gradient {
+  background: -webkit-linear-gradient(360deg, #949494 10%, #efefef 360%);
+  background: linear-gradient(360deg, #949494 10%, #efefef 360%);
+}
+
+.gradient-object {
+  position: relative;
+}
+
+.gradient-object:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%, rgb(76 76 76 / 30%) 100%);
+}
+
+.bg-navbar {
+  background-color: #5094c1;
+  opacity: 0.8;
+}
+
+.nav-item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}

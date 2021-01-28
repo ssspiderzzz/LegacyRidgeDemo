@@ -1,10 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.tailwind.css";
 
-// if (process.env.REACT_APP_API_BASE_URL) {
-//   axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
-//   axios.defaults.withCredentials = true;
-// }
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById("root"));

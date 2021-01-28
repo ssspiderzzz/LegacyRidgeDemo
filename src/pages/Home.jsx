@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useWindowSize } from "../utils/hooks";
-import Header from "../components/Header";
+import Nav from "../components/Nav";
 import VideoBanner from "../components/VideoBanner";
 import Content from "../components/Content";
 import Info from "../components/Info";
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Header userOffset={userOffset} />
+      <Nav userOffset={userOffset} />
       <VideoBanner windowHeight={windowHeight} windowWidth={windowWidth} />
       <Content />
       <Info windowWidth={windowWidth} />
