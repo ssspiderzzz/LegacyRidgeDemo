@@ -1,4 +1,4 @@
-.priceList {
+.info {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -13,14 +13,14 @@
   }
 }
 
-.priceList span:hover {
+.info span:hover {
   border: rgb(230, 230, 230) solid 2px;
   background-color: rgb(230, 230, 230);
 }
 
 .legacyNewListWrapper {
   img {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
     width: 100%;
   }
   .polygon {
@@ -37,7 +37,6 @@
   padding: 50px 0;
   position: relative;
   width: 80%;
-  max-width: 1080px;
   margin: auto;
 
   .lifestyleText {
@@ -63,7 +62,6 @@
       img {
         display: block;
         object-fit: contain;
-        width: 800px;
       }
     }
   }

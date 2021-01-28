@@ -38,6 +38,7 @@ const Info = (props) => {
             <img
               src="https://legacyridge.ca/wp-content/uploads/2018/08/hiking.jpg"
               alt="lifestylePic"
+              style={{ width: props.windowWidth - 200 }}
             />
           </div>
         </div>

@@ -20,7 +20,7 @@ const Home = () => {
       <Header userOffset={userOffset} />
       <VideoBanner windowHeight={windowHeight} windowWidth={windowWidth} />
       <Content />
-      <Info />
+      <Info windowWidth={windowWidth} />
     </div>
   );
 };
