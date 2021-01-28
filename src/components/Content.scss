@@ -1,18 +1,28 @@
 .content {
+  top: 100vh;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
   position: relative;
   width: 80%;
   max-width: 1080px;
   margin: auto;
   .welcome {
-    width: 80%;
+    width: 60%;
     margin: auto;
     h1 {
+      font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 6px;
       color: #606060;
     }
     p {
       color: #666666;
     }
+  }
+  .youtubeVideoWrapper {
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
   }
 }
