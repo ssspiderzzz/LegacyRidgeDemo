@@ -72,7 +72,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     .lifestyleInfoLinksWrapper {
-      flex-basis: 23%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
         height: 115px;
         width: 115px;

@@ -27,6 +27,10 @@ module.exports = {
       borderWidth: {
         min: "0.016rem",
       },
+      backgroundImage: (theme) => ({
+        "gallary-background":
+          'url("https://legacyridge.ca/wp-content/uploads/2018/08/Parallax.jpg")',
+      }),
     },
   },
 

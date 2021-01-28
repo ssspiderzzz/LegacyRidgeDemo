@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import VideoBanner from "../components/VideoBanner";
 import Content from "../components/Content";
 import Info from "../components/Info";
+import Gallary from "../components/Gallary";
 
 const Home = () => {
   const [userOffset, setUserOffset] = useState(0);
@@ -21,6 +22,7 @@ const Home = () => {
       <VideoBanner windowHeight={windowHeight} windowWidth={windowWidth} />
       <Content />
       <Info windowWidth={windowWidth} />
+      <Gallary />
     </div>
   );
 };
