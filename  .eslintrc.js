@@ -1,5 +1,5 @@
 module.exports = {
-  extends: "airbnb",
+  extends: ["plugin:tailwind/recommended"],
   parser: "babel-eslint",
   env: {
     browser: true,

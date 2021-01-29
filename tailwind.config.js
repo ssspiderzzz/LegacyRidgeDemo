@@ -11,12 +11,16 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      padding: { "fluid-video": "56.25%" },
       spacing: {
         "my-header": "700px",
         "effect-cell-md": "33vw",
         "effect-cell-sm": "50vw",
         "effect-cell-2md": "66vw",
         "effect-cell-3sm": "150vw",
+        "60%": "60%",
+        "80%": "80%",
+        "60vw": "60vw",
         "80vw": "80vw",
         "100vw": "100vw",
         thin: "0.5rem",

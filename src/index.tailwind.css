@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 h1 {
   @apply text-4xl font-bold mt-6 mb-6;
@@ -19,9 +21,6 @@ h4 {
 h5 {
   @apply text-lg font-bold mt-6 mb-6;
 }
-
-@tailwind components;
-@tailwind utilities;
 
 /* slightly transparent fallback */
 .backdrop-blur {
@@ -80,11 +79,6 @@ button.custom-underline::after {
   transition: 0.5s ease all 0.3s;
 }
 
-.text-black .normal-underline::after,
-.text-black .custom-underline::after {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .text-white .normal-underline::after,
 .text-white .custom-underline::after {
   background-color: rgba(255, 255, 255, 0.6);
@@ -135,4 +129,23 @@ gradient {
 .nav-item {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+.w-screen-80 {
+  width: 80vw;
+}
+
+.new-list-polygon {
+  height: 150px;
+  width: 100%;
+  background-color: #bbe2dd;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), 0 calc(100% - 50px));
+}
+
+.text-grey-title {
+  color: #606060;
+}
+
+.text-grey-p {
+  color: #666666;
 }
